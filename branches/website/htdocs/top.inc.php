@@ -36,7 +36,7 @@ piwik_log(piwik_action_name, piwik_idsite, piwik_url);
  <li class='menuitem'><a href='http://apps.sourceforge.net/mediawiki/sitracker/'>Wiki</a></li>
  <li class='menuitem'><a href='http://sitracker.wordpress.com'>Blog</a></li>
  <li class='menuitem'><a href='http://sourceforge.net/forum/forum.php?forum_id=541891'>Forum</a></li>
- <li class='menuitem'><a href='http://sit.salfordsoftware.co.uk/mantis/'>Bugtracker</a></li>
+ <li class='menuitem'><a href='http://sit.salfordsoftware.co.uk/mantis/'>Bugs</a></li>
  <li class='menuitem'><a href='http://sourceforge.net/projects/sitracker/'>Sourceforge Project</a></li>
  <li class='menuitem'><a href='http://apps.sourceforge.net/mediawiki/sitracker/index.php?title=Demo'>Demo</a></li>
  <li class='menuimte'><a href='http://apps.sourceforge.net/mediawiki/sitracker/index.php?title=Screenshots'>Screenshots</a></li>
