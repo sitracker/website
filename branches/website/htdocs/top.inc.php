@@ -15,6 +15,7 @@ function clearjumpto()
 {
     $('searchfield').value = "";
 }
+/* ]]> */
 </script>
 <!-- Piwik -->
 <script type="text/javascript">
@@ -29,21 +30,23 @@ piwik_log(piwik_action_name, piwik_idsite, piwik_url);
 <object><noscript><p><img src="http://apps.sourceforge.net/piwik/sitracker/piwik.php?idsite=1" alt="piwik"/></p></noscript></object>
 <!-- End Piwik Tag -->
 <div id='masthead'><h1 id='apptitle'><span>SiT! Support Incident Tracker</span></h1></div>
-<div id='menu'>
-<ul id='menuList'>
-<li class='menuitem'><a href='/'>Home</a></li>
-<li class='menuitem'><a href='http://apps.sourceforge.net/mediawiki/sitracker/'>Wiki</a></li>
-<li class='menuitem'><a href='http://sitracker.wordpress.com'>Blog</a></li>
-<li class='menuitem'><a href='http://sit.salfordsoftware.co.uk/mantis/'>Bugtracker</a></li>
-<li class='menuitem'><a href='http://sourceforge.net/projects/sitracker/'>Sourceforge Project</a></li>
-<li class='menuitem'><a href='http://sitdemo.salfordsoftware.co.uk'>Demo</a></li>
-<li class='menuimte'><a href='http://apps.sourceforge.net/mediawiki/sitracker/index.php?title=Screenshots'>Screenshots</a></li>
-</ul>
-
-<div id='topsearch'><form name='jumptoincident' action='http://apps.sourceforge.net/mediawiki/sitracker/index.php?title=Special:Search'><input type='text' name='search' id='searchfield' size='30' value='Wiki search'
+ <div id='menu'>
+ <ul id='menuList'>
+ <li class='menuitem'><a href='/'>Home</a></li>
+ <li class='menuitem'><a href='http://apps.sourceforge.net/mediawiki/sitracker/'>Wiki</a></li>
+ <li class='menuitem'><a href='http://sitracker.wordpress.com'>Blog</a></li>
+ <li class='menuitem'><a href='http://sourceforge.net/forum/forum.php?forum_id=541891'>Forum</a></li>
+ <li class='menuitem'><a href='http://sit.salfordsoftware.co.uk/mantis/'>Bugtracker</a></li>
+ <li class='menuitem'><a href='http://sourceforge.net/projects/sitracker/'>Sourceforge Project</a></li>
+ <li class='menuitem'><a href='http://apps.sourceforge.net/mediawiki/sitracker/index.php?title=Demo'>Demo</a></li>
+ <li class='menuimte'><a href='http://apps.sourceforge.net/mediawiki/sitracker/index.php?title=Screenshots'>Screenshots</a></li>
+ </ul>
+ <div id='topsearch'><form name='jumptoincident' action='http://apps.sourceforge.net/mediawiki/sitracker/index.php?title=Special:Search'><input type='text' name='search' id='searchfield' size='30' value='Wiki search'
     onblur="if ($('searchfield').value == '') { if (!isIE) { $('searchfield').style.color='#888;'; } $('searchfield').value='Wiki search';}"
     onfocus="if ($('searchfield').value == 'Wiki search') { if (!isIE) { $('searchfield').style.color='#000;'; } $('searchfield').value=''; }"
-    onclick='clearjumpto()'/> </form></div></div>
+    onclick='clearjumpto()'/> </form></div>
 </div>
+
 <div id='container'>
+<?php include ('side.inc.php'); ?>
 <div id='main'>
