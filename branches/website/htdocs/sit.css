@@ -1,0 +1,145 @@
+/* Base styles*/
+body {
+  font-family: "Lucida Grande", Tahoma, Helvetica, Arial, 'sans serif';
+  background-color: #FFFFFF;
+  color: #000;
+  font-size: 10pt;
+  margin: 0px 0px 15px 0px;
+}
+
+#container {
+width: 80%;
+margin: 0 auto;
+}
+
+#main {
+  width: 67%;         /* width of .main container */
+  float: left;        /* left side of window */
+  margin: 0;
+  padding: 1% 2%;
+}
+
+#side {
+  margin-left: 75%;   /* past content */
+  padding: 1%;
+  font-size: 90%;
+
+}
+
+h2 {
+  text-align: left; background: transparent; color: #0063dc;
+  width: 100%;
+  border-bottom: 1px #203894 solid;
+}
+h1 {
+  background-image: url('http://sitracker.sourceforge.net/top2.png');
+  font-size: 16pt; font-weight: bold; color: #FFF;
+  background-color: #203894; margin: 0px; padding: 3px 0px 3px 0px;
+}
+h1 { text-align: center; }
+
+#masthead {
+  background-image: url('http://sitracker.sourceforge.net/top2.png');
+  background-position: top-left; background-repeat: x-repeat;
+}
+#apptitle {
+  background-image: url('http://sitracker.sourceforge.net/sit_swirl2.png');
+  background-position: top-left; background-repeat: no-repeat;
+  height: 50px; background-color: transparent;}
+#apptitle span {
+  top: 10px;
+  position: relative;
+}
+
+#aboutsit
+{
+  text-align: center;
+}
+#aboutsit img { margin-left: auto; margin-right: auto; }
+
+
+#menu { border-bottom: 1px solid #203894; padding-bottom: 4px;}
+.menuitem li { padding-top: 3px; }
+
+#menu, #noticearea { font-size: 8pt; }
+
+#menu {
+/*  float: left; */
+  display: block;
+  color: #000;
+  margin-bottom: 5px;
+  width: 100%;
+  height: 20px;
+}
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style-type: none;
+  background-color:#FFF;
+}
+
+#menu li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: block;
+  float: left;
+  position: relative;
+}
+
+#menu li:hover {
+  color: #900;
+  background-color: #FFF;
+}
+
+
+#menu a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #5B5B5B;
+  padding: 0.25em 0.8em 0.25em 0.8em;
+  font-weight: bold;    
+}
+
+#menu a.greyed, #menu a.greyed:hover { color: #C6C3C6; }
+
+#menu li a {
+  position: relative;
+}
+img {
+border: 0px;
+}
+
+img.pretty {
+padding: 5px;
+border: 1px solid #C6C3C6;
+text-align: center;
+display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+img.left {
+float: left; 
+margin: 4px;
+}
+#footerbar select { font-size: 80%; }
+#footerbar form { margin: 0px; }
+#statusbar { clear: both; background-color: #203894; color: #FFF; text-align: center; padding: 2px 0px 2px 0px; margin-top: 1em;}
+#statusbar a { text-decoration: none; color: #FFF; }
+#statusbar a:hover { text-decoration: underline; }
+#statusbar a:active { text-decoration: underline; }
+
+
+#topsearch { text-align: right; }
+#topsearch form {margin: 1px 7px 0px 0px; }
+#topsearch #searchfield {
+  background-color: white;
+  border:1px solid #CCCCCC;
+  padding:3px 3px 3px 20px;
+  background:transparent url('http://sitracker.sourceforge.net/searchbg.png') no-repeat scroll 4px center;
+  color: #888;
+}
