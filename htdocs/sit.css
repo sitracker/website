@@ -24,11 +24,10 @@ margin: 0 auto;
 
 #side {
   margin-top: 2em;
-  margin-right: 50px;   /* past content */
   padding: 1%;
   font-size: 90%;
   float: right;
-  width: 30%;
+  width: 27%;
 /*border: 1px solid gray;*/
 }
 
