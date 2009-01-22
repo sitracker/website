@@ -17,7 +17,7 @@ foreach ($newsrss->items AS $item)
 {
     $item['description'] = str_replace('[...]', "[...] <a href='{$item['link']}'>Read more&hellip;</a>", $item['description']);
     $html .= "\n<h3 class='headline'>{$item['title']}</h3>\n";
-    $html .= "<p class='underheadline'>Published {$item['pubdate']} by {$item['dc']['creator']}.  (<a href='{$item['link']}'>Permalink</a>)</p>";
+    $html .= "<p class='underheadline'>Published {$item['pubdate']} by {$item['dc']['creator']}.  (<a href='{$item['link']}' rel='bookmark'>Permalink</a>)</p>";
     $html .= "<p class='newsstory'>{$item['description']}</p>\n";
 }
 
