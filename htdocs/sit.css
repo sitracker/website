@@ -106,7 +106,7 @@ h1 { text-align: center; }
   text-align: center;
   color: #5B5B5B;
   padding: 0.25em 0.8em 0.25em 0.8em;
-  font-weight: bold;    
+  font-weight: bold;
 }
 #menu a:hover {
   color: #203894;
@@ -131,7 +131,7 @@ display: block;
 }
 
 img.left {
-float: left; 
+float: left;
 margin: 4px;
 }
 #footerbar select { font-size: 80%; }
@@ -156,3 +156,17 @@ a:link { color: #203894; text-decoration: none; }
 a:visited { color: #2F2F2F; text-decoration: none; }
 a:hover, a:active { color: #5B5B5B; text-decoration: underline; }
 
+h3.headline
+{
+    margin: 0px;
+}
+p.underheadline
+{
+    font-size: 80%;
+    color: #808080;
+    margin: 0px;
+}
+p.newsstory
+{
+    margin-bottom: 1em;
+}
