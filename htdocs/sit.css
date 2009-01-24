@@ -170,3 +170,9 @@ p.newsstory
 {
     margin-bottom: 1em;
 }
+p#hostedby
+{
+    text-align: center;
+    font-size: 80%;
+    color: #808080;
+}
