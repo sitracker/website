@@ -1,5 +1,8 @@
-redirect 301 /HomePage http://sitracker.sourceforge.net/
+redirect 301 /HomePage http://sitracker.org/
 <IfModule mod_rewrite.c>
 RewriteEngine On
-ErrorDocument 404 /404.php
+RewriteRule ^wiki/(.*)$ /w/index.php?title=$1 [PT,L,QSA]
+RewriteRule ^wiki/*$ /w/index.php [L,QSA]
+###RewriteRule ^/*$ /w/index.php [L,QSA]
 </IfModule>
+ErrorDocument 404 /404.php
