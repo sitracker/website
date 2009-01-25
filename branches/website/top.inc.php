@@ -26,7 +26,7 @@ function clearjumpto()
  <li class='menuitem'><a href='/wiki/'>Wiki</a></li>
  <li class='menuitem'><a href='http://sitracker.wordpress.com'>Blog</a></li>
  <li class='menuitem'><a href='http://sourceforge.net/forum/forum.php?forum_id=541891'>Forum</a></li>
- <li class='menuitem'><a href='http://sit.salfordsoftware.co.uk/mantis/'>Bugs</a></li>
+ <li class='menuitem'><a href='http://bugs.sitracker.org/'>Bugs</a></li>
  <li class='menuitem'><a href='http://sourceforge.net/projects/sitracker/'>Sourceforge Project</a></li>
  <li class='menuitem'><a href='/wiki/Demo'>Demo</a></li>
  <li class='menuimte'><a href='/wiki/Screenshots'>Screenshots</a></li>
