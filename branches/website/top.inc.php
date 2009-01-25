@@ -22,15 +22,15 @@ function clearjumpto()
  <div id='menu'>
  <ul id='menuList'>
  <li class='menuitem'><a href='/'>Home</a></li>
- <li class='menuitem'><a href='http://apps.sourceforge.net/mediawiki/sitracker/'>Wiki</a></li>
+ <li class='menuitem'><a href='/wiki/'>Wiki</a></li>
  <li class='menuitem'><a href='http://sitracker.wordpress.com'>Blog</a></li>
  <li class='menuitem'><a href='http://sourceforge.net/forum/forum.php?forum_id=541891'>Forum</a></li>
  <li class='menuitem'><a href='http://sit.salfordsoftware.co.uk/mantis/'>Bugs</a></li>
  <li class='menuitem'><a href='http://sourceforge.net/projects/sitracker/'>Sourceforge Project</a></li>
- <li class='menuitem'><a href='http://apps.sourceforge.net/mediawiki/sitracker/index.php?title=Demo'>Demo</a></li>
- <li class='menuimte'><a href='http://apps.sourceforge.net/mediawiki/sitracker/index.php?title=Screenshots'>Screenshots</a></li>
+ <li class='menuitem'><a href='/wiki/Demo'>Demo</a></li>
+ <li class='menuimte'><a href='/wiki/Screenshots'>Screenshots</a></li>
  </ul>
- <div id='topsearch'><form name='jumptoincident' action='http://apps.sourceforge.net/mediawiki/sitracker/index.php?title=Special:Search'><input type='text' name='search' id='searchfield' size='30' value='Wiki search'
+ <div id='topsearch'><form name='jumptoincident' action='/wiki/Special:Search'><input type='text' name='search' id='searchfield' size='30' value='Wiki search'
     onblur="if ($('searchfield').value == '') { if (!isIE) { $('searchfield').style.color='#888;'; } $('searchfield').value='Wiki search';}"
     onfocus="if ($('searchfield').value == 'Wiki search') { if (!isIE) { $('searchfield').style.color='#000;'; } $('searchfield').value=''; }"
     onclick='clearjumpto()'/> </form></div>
