@@ -8,5 +8,18 @@ hosting" border="0" height="32" width="100" /></a> &nbsp;
  <a href="http://www.salfordsoftware.co.uk/"><img src="salford-software-button.png" alt="Salford Software" title="Salford Software is proud to sponsor SiT development" border="0" height="31" width="86" /></a>
 </p>
 <p id='hostedby'>Hosted by <a href=''>Tsohost.co.uk</a> clustered grid hosting</a></p>
+<!-- Piwik -->
+<a href="http://piwik.org" title="Open source web analytics" onclick="window.open(this.href);return(false);">
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://sitracker.org/piwik/" : "http://sitracker.org/piwik/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+piwik_action_name = '';
+piwik_idsite = 1;
+piwik_url = pkBaseURL + "piwik.php";
+piwik_log(piwik_action_name, piwik_idsite, piwik_url);
+</script>
+<object><noscript><p>Open source web analytics <img src="http://sitracker.org/piwik/piwik.php?idsite=1" style="border:0" alt=""/></p></noscript></object></a>
+<!-- End Piwik Tag --> 
 </body>
 </html>

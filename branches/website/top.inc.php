@@ -9,7 +9,6 @@
 <script src='/prototype.js' type='text/javascript'></script>
 <style type='text/css'>@import url('http://sitracker.org/sit.css');</style>
 </head>
-<body>
 <script type="text/javascript">
 /* <![CDATA[ */
 function clearjumpto()
@@ -18,19 +17,7 @@ function clearjumpto()
 }
 /* ]]> */
 </script>
-<!-- Piwik -->
-<a href="http://piwik.org" title="Open source web analytics" onclick="window.open(this.href);return(false);">
-<script type="text/javascript">
-var pkBaseURL = (("https:" == document.location.protocol) ? "https://sitracker.org/piwik/" : "http://sitracker.org/piwik/");
-document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-</script><script type="text/javascript">
-piwik_action_name = '';
-piwik_idsite = 1;
-piwik_url = pkBaseURL + "piwik.php";
-piwik_log(piwik_action_name, piwik_idsite, piwik_url);
-</script>
-<object><noscript><p>Open source web analytics <img src="http://sitracker.org/piwik/piwik.php?idsite=1" style="border:0" alt=""/></p></noscript></object></a>
-<!-- End Piwik Tag --> 
+<body>
 <div id='masthead'><h1 id='apptitle'><span>SiT! Support Incident Tracker</span></h1></div>
  <div id='menu'>
  <ul id='menuList'>
