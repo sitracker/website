@@ -11,6 +11,7 @@
 </head>
 <script type="text/javascript">
 /* <![CDATA[ */
+var isIE = /*@cc_on!@*/false;
 function clearjumpto()
 {
     $('searchfield').value = "";
