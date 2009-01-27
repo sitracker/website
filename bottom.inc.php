@@ -8,6 +8,7 @@ hosting" border="0" height="32" width="100" /></a> &nbsp;
  <a href="http://www.salfordsoftware.co.uk/"><img src="salford-software-button.png" alt="Salford Software" title="Salford Software is proud to sponsor SiT development" border="0" height="31" width="86" /></a>
 </p>
 <p id='hostedby'>Hosted by <a href='http://www.tsohost.co.uk'>Tsohost.co.uk</a> clustered grid hosting</a></p>
+<script type="text/javascript" src="http://www.ohloh.net/p/15567/widgets/project_users_logo.js"></script>
 <!-- Piwik -->
 <a href="http://piwik.org" title="Open source web analytics" onclick="window.open(this.href);return(false);">
 <script type="text/javascript">
