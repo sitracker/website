@@ -3,8 +3,8 @@
 <?php
 include_once 'magpie/rss_fetch.inc';
 
-echo "<h2><div style='float:right;margin-top:6px;'><a href='{$relfeedurl}' title='Releases feed (RSS)'>";
-echo "<img src='feed-icon-12x12.png' width='12' height='12' alt='' /></a></div>Releases</h2>";
+echo "<h2><span style='float:right;margin-top:6px;'><a href='{$relfeedurl}' title='Releases feed (RSS)'>";
+echo "<img src='feed-icon-12x12.png' width='12' height='12' alt='' /></a></span>Releases</h2>";
 
 
 $relrss = fetch_rss($relfeedurl);
