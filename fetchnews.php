@@ -15,14 +15,19 @@ $relrss = fetch_rss('http://sourceforge.net/export/rss2_projnews.php?group_id=16
 $html = '';
 foreach ($newsrss->items AS $item)
 {
-    $item['description'] = str_replace('[...]', "[...] <a href='{$item['link']}'>Read more&hellip;</a>", $item['description']);
+    $item['description'] = str_replace('[...]', "[...] <a href='{$item['link']} class='more'>Read more&hellip;</a>", $item['description']);
     $html .= "\n<h3 class='headline'>{$item['title']}</h3>\n";
     $html .= "<p class='underheadline'>Published {$item['pubdate']} by {$item['dc']['creator']}.  (<a href='{$item['link']}' rel='bookmark'>Permalink</a>)</p>";
     $html .= "<p class='newsstory'>{$item['description']}</p>\n";
 }
 
-file_put_contents('news.html', $html);
-echo "news.html updated\n";
+echo "<pre>".print_r($newsrss, true)."</pre>";
+echo "<hr />";
+
+//file_put_contents('news.html', $html);
+//echo "news.html updated\n";
+
+echo nl2br(htmlentities($html));
 
 
 $html = '';
@@ -32,7 +37,7 @@ $version = str_replace(' - Released','',$version);
 $reldate = date('d F Y',strtotime($relrss->items[0]['pubdate']));
 
 $html .= "<h3>Latest release: {$version} ({$reldate})</h3>\n";
-file_put_contents('release.html', $html);
-echo "release.html updated\n";
+//file_put_contents('release.html', $html);
+//echo "release.html updated\n";
 
 ?>
