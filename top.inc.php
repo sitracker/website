@@ -8,7 +8,6 @@
 <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://sitracker.wordpress.com/category/news/feed/" />
 <script src='/prototype.js' type='text/javascript'></script>
 <style type='text/css'>@import url('http://sitracker.org/sit.css');</style>
-</head>
 <script type="text/javascript">
 /* <![CDATA[ */
 var isIE = /*@cc_on!@*/false;
@@ -18,6 +17,7 @@ function clearjumpto()
 }
 /* ]]> */
 </script>
+</head>
 <body>
 <div id='masthead'><h1 id='apptitle'><span>SiT! Support Incident Tracker</span></h1></div>
  <div id='menu'>
