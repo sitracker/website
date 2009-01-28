@@ -30,7 +30,7 @@ if (is_object($newsrss))
         if ($itemcount > $newsitems) break;
     }
     echo utf8_encode($html);
-    echo "<p><a href='http://sitracker.wordpress.com/category/news/'>Older news</a></p>";
+    echo "<p><a href='http://sitracker.wordpress.com/category/news/'>&lt; Older news</a></p>";
 }
 else
 {
