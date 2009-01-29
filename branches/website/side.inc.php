@@ -20,10 +20,10 @@ if (is_object($relrss))
 }
 // <h3>Latest release: v3.41 (17 December 2008)</h3>
 ?>
-<a href='/Download'>
+<a href='/wiki/Download'>
  <img class='left' src='http://sitracker.sourceforge.net/download.png'  style='padding-top:5px;' alt='' /><br />
  <strong>Download</strong><br />Download the latest release</a>
- <p>See the <a href='/ReleaseNotes'>release notes</a> for details.</p>
+ <p>See the <a href='/wiki/ReleaseNotes'>release notes</a> for details.</p>
 <!-- Ohloh, I use it button -->
 <script type="text/javascript" src="http://www.ohloh.net/p/15567/widgets/project_users_logo.js"></script>
 </div>
