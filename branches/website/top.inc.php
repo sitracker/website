@@ -22,14 +22,14 @@ function clearjumpto()
 <div id='masthead'><h1 id='apptitle'><span>SiT! Support Incident Tracker</span></h1></div>
  <div id='menu'>
  <ul id='menuList'>
- <li class='menuitem'><a href='/'>Home</a></li>
- <li class='menuitem'><a href='/wiki/'>Wiki</a></li>
+ <li class='menuitem'><a href='http://sitracker.org/'>Home</a></li>
+ <li class='menuitem'><a href='http://sitracler.org/wiki/'>Wiki</a></li>
  <li class='menuitem'><a href='http://sitracker.wordpress.com'>Blog</a></li>
- <li class='menuitem'><a href='http://sourceforge.net/forum/forum.php?forum_id=541891'>Forum</a></li>
+ <li class='menuitem'><a href='http://sitracker.org/forum/'>Forum</a></li>
  <li class='menuitem'><a href='http://bugs.sitracker.org/'>Bugs</a></li>
  <li class='menuitem'><a href='http://sourceforge.net/projects/sitracker/'>Sourceforge Project</a></li>
- <li class='menuitem'><a href='/wiki/Demo'>Demo</a></li>
- <li class='menuimte'><a href='/wiki/Screenshots'>Screenshots</a></li>
+ <li class='menuitem'><a href='http://sitracker.org/wiki/Demo'>Demo</a></li>
+ <li class='menuimte'><a href='http://sitracker.org/wiki/Screenshots'>Screenshots</a></li>
  </ul>
  <div id='topsearch'><form name='jumptoincident' action='/wiki/Special:Search'><input type='text' name='search' id='searchfield' size='30' value='Wiki search'
     onblur="if ($('searchfield').value == '') { if (!isIE) { $('searchfield').style.color='#888;'; } $('searchfield').value='Wiki search';}"
