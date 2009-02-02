@@ -23,7 +23,7 @@ function clearjumpto()
  <div id='menu'>
  <ul id='menuList'>
  <li class='menuitem'><a href='http://sitracker.org/'>Home</a></li>
- <li class='menuitem'><a href='http://sitracler.org/wiki/'>Wiki</a></li>
+ <li class='menuitem'><a href='http://sitracker.org/wiki/'>Wiki</a></li>
  <li class='menuitem'><a href='http://sitracker.wordpress.com'>Blog</a></li>
  <li class='menuitem'><a href='http://sitracker.org/forum/'>Forum</a></li>
  <li class='menuitem'><a href='http://bugs.sitracker.org/'>Bugs</a></li>
