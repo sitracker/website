@@ -5,6 +5,7 @@ $newsitems = 4;
 
 $relfeedurl = 'http://sourceforge.net/export/rss2_projnews.php?group_id=160319';
 
+$microblogurl = 'http://identi.ca/group/sit/rss';
 
 include 'top.inc.php';
 include_once 'magpie/rss_fetch.inc';
