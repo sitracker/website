@@ -45,6 +45,7 @@ foreach ($mbrss->items as $post)
         $post['dc']['date'] = str_replace("+00:00", "", $post['dc']['date']);
         $post['title'] = str_replace("!sit", "<a href='http://identi.ca/groups/sit'>!sit</a>", $post['title']);
         $post['title'] = preg_replace("/^(.*?):/s", "<a href='http://identi.ca/$1'>$1</a>:", $post['title']);
+        $post['title'] = preg_replace("!([\n\t ]+)(http[s]?:/{2}[\w\.]{2,}[/\w\-\.\?\&\=\#\$\%|;|\[|\]~:]*)!e", "'\\1<a href=\"\\2\" title=\"\\2\">\\2</a>'", $post['title']);
         echo "<p>{$post['title']}<br />";
         echo "<small><a href='{$post['link']}'>{$post['dc']['date']}</a></small></p>";
         $count++;
