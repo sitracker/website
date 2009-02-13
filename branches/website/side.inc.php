@@ -28,6 +28,8 @@ if (is_object($relrss))
 <!-- Ohloh, I use it button -->
 <script type="text/javascript" src="http://www.ohloh.net/p/15567/widgets/project_users_logo.js"></script>
 
+<br />
+
 <?php
 echo "<h2><span style='float:right;margin-top:6px;'><a href='{$microblogfeedurl}' title='Identi.ca (RSS)'>";
 echo "<img src='feed-icon-12x12.png' width='12' height='12' alt='' /></a></span>";
