@@ -33,9 +33,10 @@ if (is_object($relrss))
 <?php
 echo "<h2><span style='float:right;margin-top:6px;'><a href='{$microblogfeedurl}' title='Identi.ca (RSS)'>";
 echo "<img src='feed-icon-12x12.png' width='12' height='12' alt='' /></a></span>";
-echo "<a href='http://identi.ca/groups/sit'>Identi.ca</a></h2>";
+echo "<a href='http://identi.ca/'><img src='identicaicon.png' width='16' height='16' alt='' /></a> ";
+echo "<a href='{$microblogurl}' title='Identi.ca Microblogging'>Identi.ca</a></h2>";
 
-$mbrss = fetch_rss($microblogurl);
+$mbrss = fetch_rss($microblogfeedurl);
 $count = 1;
 foreach ($mbrss->items as $post)
 {
