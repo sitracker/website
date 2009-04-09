@@ -11,9 +11,14 @@ $microblogfeedurl = 'http://identi.ca/group/sit/rss';
 include 'top.inc.php';
 include_once 'magpie/rss_fetch.inc';
 ?>
+<!-- TL09 Banner -->
+<div class='advert' style='margin-top: 10px; margin-left: auto; margin-right: auto; width: 468px;'>
+<a href="http://www.trophees-du-libre.org/" title="Les Trophées du Libre 5 - 6 June 2009"><img src="ads/TL09banner.jpg" /></a>
+</div>
 <h2>Welcome</h2>
 <p>Support Incident Tracker (or SiT!) is a <a href="http://www.gnu.org/philosophy/free-sw.html" target="_blank">Free Software</a>/Open Source (<a href="http://www.opensource.org/licenses/gpl-license.php" target="_blank">GPL</a>) web based application which uses <a href="http://www.php.net/" target="_blank">PHP</a> and <a href="http://www.mysql.com/" target="_blank">MySQL</a> for tracking technical support calls/emails (also commonly known as a 'Help Desk' or 'Support Ticket System'). Manage contacts, sites, technical support contracts and support incidents in one place. Send emails directly from SiT!, attach files and record every communication in the incident log. SiT is aware of Service Level Agreements and incidents are flagged if they stray outside of them.</p>
 <img class='pretty' src='http://sitracker.sourceforge.net/screenshots.jpg' width='300' height='196' alt='SiT Screenshot' />
+
 <?php
 echo "<h2><span style='float:right;margin-top:6px;'><a href='{$newsfeedurl}' title='News feed (RSS)'>";
 echo "<img src='feed-icon-12x12.png' width='12' height='12' alt='' /></a></span>News</h2>";
