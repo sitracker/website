@@ -1,4 +1,6 @@
 redirect 301 /HomePage http://sitracker.org/
+redirect 301 /revisions.xml http://sitracker.org/w/index.php?title=Special:RecentChanges&feed=rss
+redirect 301 /viewforum.php http://sitracker.org/forum/
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
