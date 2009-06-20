@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /cache/
+
+User-agent: Java/1.4.1_04
+Disallow: /
+
