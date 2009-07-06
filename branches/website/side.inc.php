@@ -36,12 +36,23 @@ echo "<img src='feed-icon-12x12.png' width='12' height='12' alt='' /></a></span>
 echo "<a href='http://identi.ca/'><img src='identicaicon.png' width='16' height='16' alt='' /></a> ";
 echo "<a href='{$microblogurl}' title='Identi.ca Microblogging'>Identi.ca</a></h2>";
 
+// Fixes the encoding to uf8
+function fixEncoding($in_str)
+{
+  $cur_encoding = mb_detect_encoding($in_str) ;
+  if($cur_encoding == "UTF-8" && mb_check_encoding($in_str,"UTF-8"))
+    return $in_str;
+  else
+    return utf8_encode($in_str);
+} // fixEncoding 
+
 $mbrss = fetch_rss($microblogfeedurl);
 $count = 1;
 foreach ($mbrss->items as $post)
 {
     if ($count <= 3)
     {
+        $post['title'] = fixEncoding($post['title']);
         $post['dc']['date'] = str_replace("T", " @ ", $post['dc']['date']);
         $post['dc']['date'] = str_replace("+00:00", "", $post['dc']['date']);
         $post['title'] = str_replace("!sit", "<a href='http://identi.ca/groups/sit'>!sit</a>", $post['title']);
