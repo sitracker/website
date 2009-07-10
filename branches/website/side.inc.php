@@ -7,7 +7,7 @@ echo "<h2><span style='float:right;margin-top:6px;'><a href='{$relfeedurl}' titl
 echo "<img src='feed-icon-12x12.png' width='12' height='12' alt='' /></a></span>Releases</h2>";
 
 
-$relrss = fetch_rss($relfeedurl);
+if (!empty($relfeedurl)) $relrss = fetch_rss($relfeedurl);
 if (is_object($relrss))
 {
     $version = str_replace('Support Incident Tracker (SiT!) ','',$relrss->items[0]['title']);
@@ -46,7 +46,7 @@ function fixEncoding($in_str)
     return utf8_encode($in_str);
 } // fixEncoding 
 
-$mbrss = fetch_rss($microblogfeedurl);
+if (!empty($microblogfeedurl)) $mbrss = fetch_rss($microblogfeedurl);
 $count = 1;
 foreach ($mbrss->items as $post)
 {
