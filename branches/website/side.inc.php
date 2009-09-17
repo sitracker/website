@@ -67,4 +67,26 @@ if (is_array($mbrss))
   }
 }
 ?>
+
+<div style='border-top: 1px solid #203894; border-bottom: 1px solid #203894; margin-top: 3em; padding-top: 1em; padding-bottom: 2em;'>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="8254393">
+<input type="image" src="x-click-butcc-donate.gif" border="0" style="float: left; padding-right: 0.5em;" name="submit" alt="PayPal - The safer, easier way to pay online.">
+<img alt="" border="0" src="pixel.gif" width="1" height="1"><span style='color: #333;'>Your donation will help us to build a better application. Thank you.</span>
+</form>
 </div>
+
+<div id='sociallinks' style=''>
+<a href="http://delicious.com/save" onclick="window.open('http://delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550'); return false;"><img src='delicious.png' alt='' title='del.icio.us'/></a>
+<a href="http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http%3A%2F%2Fsitracker.org&amp;title=Support%20Incident%20Tracker"><img src='googlebookmark.png' alt='' title='Google Bookmarks' /></a>
+<a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fsitracker.org"><img src='facebook.png' alt='' title='Facebook' /></a>
+<a href="http://www.netvibes.com/share?title=Support%20Incident%20Tracker&amp;url=http%3A%2F%2Fsitracker.org"><img src='netvibes.png' alt='' title='Netvibes' /></a>
+<a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fsitracker.org&amp;title=Support%20Incident%20Tracker"><img src='stumbleupon.png' alt='' title='StumbleUpon' /></a>
+<a href='http://identi.ca/notice/new?status_textarea=http%3A%2F%2Fsitracker.org%20!sit'><img src='identica.png' alt='' title='Identi.ca' /></a>
+<a href="http://twitter.com/home?status=Support%20Incident%20Tracker%20http%3A%2F%2Fsitracker.org"><img src='twitter.png' alt='' title='Twitter' /></a>
+</div>
+
+
+</div>
+
