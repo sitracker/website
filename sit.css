@@ -43,6 +43,8 @@ h1 {
 }
 h1 { text-align: center; }
 
+div.hr { width: 100%; border-bottom: 1px solid #203894; margin-top: 1em;}
+
 #masthead {
   background-image: url('http://sitracker.sourceforge.net/top2.png');
   background-position: top-left; background-repeat: x-repeat;
@@ -179,4 +181,17 @@ p#hostedby
 .more
 {
     font-size: 90%;
+}
+
+#sociallinks
+{
+  margin-top: 1em; padding-top: 1em; padding-bottom: 2em;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sociallinks a
+{
+  margin-right: 10px;
 }
