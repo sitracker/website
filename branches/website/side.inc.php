@@ -14,15 +14,15 @@ if (is_object($relrss))
     $version = str_replace(' - Released','',$version);
     $reldate = date('d F Y',strtotime($relrss->items[0]['pubdate']));
 
-    $html .= "<h3>Latest release: {$version} ({$reldate})</h3>\n";
+    $html .= "<h3>Current release: {$version} ({$reldate})</h3>\n";
 
     echo $html;
 }
-// <h3>Latest release: v3.41 (17 December 2008)</h3>
+// <h3>Current release: v3.41 (17 December 2008)</h3>
 ?>
 <a href='/wiki/Download'>
  <img class='left' src='http://sitracker.sourceforge.net/download.png'  style='padding-top:5px;' alt='' /><br />
- <strong>Download</strong><br />Download the latest release</a>
+ <strong>Download</strong><br />Grab your copy now!</a>
  <p>See the <a href='/wiki/ReleaseNotes'>release notes</a> for details.</p>
 
 <!-- Ohloh, I use it button -->
@@ -31,40 +31,40 @@ if (is_object($relrss))
 <br />
 
 <?php
-echo "<h2><span style='float:right;margin-top:6px;'><a href='{$microblogfeedurl}' title='Identi.ca (RSS)'>";
-echo "<img src='feed-icon-12x12.png' width='12' height='12' alt='' /></a></span>";
-echo "<a href='http://identi.ca/'><img src='identicaicon.png' width='16' height='16' alt='' /></a> ";
-echo "<a href='{$microblogurl}' title='Identi.ca Microblogging'>Identi.ca</a></h2>";
-
-if (!empty($microblogfeedurl)) $mbrss = fetch_rss($microblogfeedurl);
-// Fixes the encoding to uf8
-function fixEncoding($in_str)
+if (!empty($microblogfeedurl))
 {
-  $cur_encoding = mb_detect_encoding($in_str) ;
-  if($cur_encoding == "UTF-8" && mb_check_encoding($in_str,"UTF-8"))
-    return $in_str;
-  else
-    return utf8_encode($in_str);
-} // fixEncoding 
+    echo "<h2><span style='float:right;margin-top:6px;'><a href='{$microblogfeedurl}' title='Identi.ca (RSS)'>";
+    echo "<img src='feed-icon-12x12.png' width='12' height='12' alt='' /></a></span>";
+    echo "<a href='http://identi.ca/'><img src='identicaicon.png' width='16' height='16' alt='' /></a> ";
+    echo "<a href='{$microblogurl}' title='Identi.ca Microblogging'>Identi.ca</a></h2>";
 
-$count = 1;
-if (is_array($mbrss))
-{
-  foreach ($mbrss->items as $post)
-  {
-      if ($count <= 3)
-      {
-          $post['title'] = fixEncoding($post['title']);
-          $post['dc']['date'] = str_replace("T", " @ ", $post['dc']['date']);
-          $post['dc']['date'] = str_replace("+00:00", "", $post['dc']['date']);
-          $post['title'] = str_replace("!sit", "<a href='http://identi.ca/groups/sit'>!sit</a>", $post['title']);
-          $post['title'] = preg_replace("/^(.*?):/s", "<a href='http://identi.ca/$1'>$1</a>:", $post['title']);
-          $post['title'] = preg_replace("!([\n\t ]+)(http[s]?:/{2}[\w\.]{2,}[/\w\-\.\?\&\=\#\$\%|;|\[|\]~:]*)!e", "'\\1<a href=\"\\2\" title=\"\\2\">\\2</a>'", $post['title']);
-          echo "<p>{$post['title']}<br />";
-          echo "<small><a href='{$post['link']}'>{$post['dc']['date']}</a></small></p>";
-          $count++;
-      }
-  }
+    $mbrss = fetch_rss($microblogfeedurl);
+    // Fixes the encoding to uf8
+    function fixEncoding($in_str)
+    {
+      $cur_encoding = mb_detect_encoding($in_str) ;
+      if($cur_encoding == "UTF-8" && mb_check_encoding($in_str,"UTF-8"))
+        return $in_str;
+      else
+        return utf8_encode($in_str);
+    } // fixEncoding 
+  
+    $count = 1;
+    foreach ($mbrss->items as $post)
+    {
+        if ($count <= 3)
+        {
+            $post['title'] = fixEncoding($post['title']);
+            $post['dc']['date'] = str_replace("T", " @ ", $post['dc']['date']);
+            $post['dc']['date'] = str_replace("+00:00", "", $post['dc']['date']);
+            $post['title'] = str_replace("!sit", "<a href='http://identi.ca/group/sit'>!sit</a>", $post['title']);
+            $post['title'] = preg_replace("/^(.*?):/s", "<a href='http://identi.ca/$1'>$1</a>:", $post['title']);
+            $post['title'] = preg_replace("!([\n\t ]+)(http[s]?:/{2}[\w\.]{2,}[/\w\-\.\?\&\=\#\$\%|;|\[|\]~:]*)!e", "'\\1<a href=\"\\2\" title=\"\\2\">\\2</a>'", $post['title']);
+            echo "<p>{$post['title']}<br />";
+            echo "<small><a href='{$post['link']}'>{$post['dc']['date']}</a></small></p>";
+            $count++;
+        }
+    }
 }
 ?>
 
@@ -78,13 +78,13 @@ if (is_array($mbrss))
 </div>
 
 <div id='sociallinks' style=''>
-<a href="http://delicious.com/save" onclick="window.open('http://delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550'); return false;"><img src='delicious.png' alt='' title='del.icio.us'/></a>
+<a href="http://delicious.com/save" onclick="window.open('http://delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550'); return false;"><img src='delicious.png' alt='' title='Bookmark with del.icio.us'/></a>
 <a href="http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http%3A%2F%2Fsitracker.org&amp;title=Support%20Incident%20Tracker"><img src='googlebookmark.png' alt='' title='Google Bookmarks' /></a>
-<a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fsitracker.org"><img src='facebook.png' alt='' title='Facebook' /></a>
-<a href="http://www.netvibes.com/share?title=Support%20Incident%20Tracker&amp;url=http%3A%2F%2Fsitracker.org"><img src='netvibes.png' alt='' title='Netvibes' /></a>
-<a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fsitracker.org&amp;title=Support%20Incident%20Tracker"><img src='stumbleupon.png' alt='' title='StumbleUpon' /></a>
-<a href='http://identi.ca/notice/new?status_textarea=http%3A%2F%2Fsitracker.org%20!sit'><img src='identica.png' alt='' title='Identi.ca' /></a>
-<a href="http://twitter.com/home?status=Support%20Incident%20Tracker%20http%3A%2F%2Fsitracker.org"><img src='twitter.png' alt='' title='Twitter' /></a>
+<a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fsitracker.org"><img src='facebook.png' alt='' title='Bookmark via Facebook' /></a>
+<a href="http://www.netvibes.com/share?title=Support%20Incident%20Tracker&amp;url=http%3A%2F%2Fsitracker.org"><img src='netvibes.png' alt='' title='Bookmark via Netvibes' /></a>
+<a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fsitracker.org&amp;title=Support%20Incident%20Tracker"><img src='stumbleupon.png' alt='' title='Share via StumbleUpon' /></a>
+<a href='http://identi.ca/notice/new?status_textarea=http%3A%2F%2Fsitracker.org%20!sit'><img src='identica.png' alt='' title='Share via Identi.ca' /></a>
+<a href="http://twitter.com/home?status=Support%20Incident%20Tracker%20http%3A%2F%2Fsitracker.org"><img src='twitter.png' alt='' title='Share via Twitter' /></a>
 </div>
 
 
