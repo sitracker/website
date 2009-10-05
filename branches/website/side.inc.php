@@ -14,7 +14,9 @@ if (is_object($relrss))
     $version = str_replace(' - Released','',$version);
     $reldate = date('d F Y',strtotime($relrss->items[0]['pubdate']));
 
-    $html .= "<h3>Current release: {$version} ({$reldate})</h3>\n";
+    //$html .= "<h3>Current release: {$version} ({$reldate})</h3>\n";
+    // FIXME release version number hardcoded while sf news is broken - 5 oct 09 INL
+    $html .= "<h3>Current release: v3.51rc3 (17 September 2009)</h3>\n";
 
     echo $html;
 }
