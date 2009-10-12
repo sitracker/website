@@ -32,7 +32,7 @@ function clearjumpto()
  <li class='menuitem'><a href='http://sourceforge.net/projects/sitracker/'>Sourceforge Project</a></li>
  <li class='menuitem'><a href='http://sitracker.org/wiki/Demo'>Demo</a></li>
  <li class='menuimte'><a href='http://sitracker.org/wiki/Screenshots'>Screenshots</a></li>
- <li class='menuimte'><a href='http://sitracker.spreadshirt.net/'>Merchandise</a></li>
+ <li class='menuimte'><a href='http://sitracker.spreadshirt.co.uk/'>Merchandise</a></li>
  </ul>
  <div id='topsearch'><form name='jumptoincident' action='/wiki/Special:Search'><input type='text' name='search' id='searchfield' size='30' value='Wiki search'
     onblur="if ($('searchfield').value == '') { if (!isIE) { $('searchfield').style.color='#888;'; } $('searchfield').value='Wiki search';}"
