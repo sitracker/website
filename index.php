@@ -1,4 +1,5 @@
 <?php
+define('MAGPIE_CACHE_AGE', 15*60); // 15 minutes
 $newsfeedurl = 'http://sitracker.wordpress.com/category/news/feed/';
 // NUmber of news items to show
 $newsitems = 4;
