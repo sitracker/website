@@ -1,5 +1,5 @@
 <div id='side'>
- <img src='http://sitracker.sourceforge.net/newlogo.png' alt='SiT logo' />
+ <img src='http://sitracker.org/newlogo.png' alt='SiT logo' />
 <?php
 include_once 'magpie/rss_fetch.inc';
 
@@ -23,7 +23,7 @@ if (is_object($relrss))
 // <h3>Current release: v3.41 (17 December 2008)</h3>
 ?>
 <a href='/wiki/Download'>
- <img class='left' src='http://sitracker.sourceforge.net/download.png'  style='padding-top:5px;' alt='' /><br />
+ <img class='left' src='http://sitracker.org/download.png'  style='padding-top:5px;' alt='' /><br />
  <strong>Download</strong><br />Grab your copy now!</a>
  <p>See the <a href='/wiki/ReleaseNotes'>release notes</a> for details.</p>
 
@@ -49,8 +49,8 @@ if (!empty($microblogfeedurl))
         return $in_str;
       else
         return utf8_encode($in_str);
-    } // fixEncoding 
-  
+    } // fixEncoding
+
     $count = 1;
     foreach ($mbrss->items as $post)
     {
@@ -89,6 +89,17 @@ if (!empty($microblogfeedurl))
 <a href="http://twitter.com/home?status=Support%20Incident%20Tracker%20http%3A%2F%2Fsitracker.org"><img src='twitter.png' alt='' title='Share via Twitter' /></a>
 </div>
 
+
+<h2>Translation Status</h2>
+<?php
+echo translation_percent_bar('en-GB', 100);
+echo translation_percent_bar('fr-FR', 99.83);
+echo translation_percent_bar('pt-BR', 63.16);
+echo translation_percent_bar('es-CO', 47.88);
+
+echo "<p><a href=\"http://sitracker.org/wiki/Translation\">Please help us to translate SiT!</a></p>";
+?>
+</div>
 
 </div>
 

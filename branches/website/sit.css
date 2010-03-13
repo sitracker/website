@@ -195,3 +195,23 @@ p#hostedby
 {
   margin-right: 10px;
 }
+
+.percentcontainer {
+    width: 100px; border: 1px solid #888; background-color: red; height: 10px; display: inline-block;
+}
+
+.percentbar {
+    text-align: center; height: 10px; font-size: 80%;
+    background: #39CA2A;
+    width: 0px; /* default */
+}
+
+.percentbarpercent
+{
+    padding-bottom: 4px; color: white; top: -1px; position: relative;
+}
+
+.languagepercentlabel
+{
+    width: 40px; display: inline-block;
+}
