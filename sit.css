@@ -197,7 +197,7 @@ p#hostedby
 }
 
 .percentcontainer {
-    width: 100px; border: 1px solid #888; background-color: red; height: 10px; display: inline-block;
+    width: 250px; border: 1px solid #888; background-color: red; height: 10px; display: inline-block;
 }
 
 .percentbar {
