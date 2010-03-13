@@ -93,9 +93,26 @@ if (!empty($microblogfeedurl))
 <h2>Translation Status</h2>
 <?php
 echo translation_percent_bar('en-GB', 100);
+echo translation_percent_bar('en-US', 100);
+echo translation_percent_bar('da-DK', 100);
 echo translation_percent_bar('fr-FR', 99.83);
+echo translation_percent_bar('nl-NL', 99.83);
+echo translation_percent_bar('bg-BG', 97.57);
+echo translation_percent_bar('it-IT', 97.57);
+echo translation_percent_bar('ru-RU', 81.66);
+echo translation_percent_bar('es-MX', 76.74);
+echo translation_percent_bar('es-ES', 67.29);
+echo translation_percent_bar('zh-TW', 51.73);
+echo translation_percent_bar('zh-CN', 51.67);
 echo translation_percent_bar('pt-BR', 63.16);
 echo translation_percent_bar('es-CO', 47.88);
+echo translation_percent_bar('de-DE', 51.50);
+echo translation_percent_bar('ja-JP', 30.50);
+echo translation_percent_bar('lt-LT', 23.32);
+echo translation_percent_bar('pt-PT', 15.62);
+echo translation_percent_bar('sl-SL', 4.53);
+echo translation_percent_bar('ca-ES', 4.13);
+echo translation_percent_bar('cy-GB', 1.30);
 
 echo "<p><a href=\"http://sitracker.org/wiki/Translation\">Please help us to translate SiT!</a></p>";
 ?>
