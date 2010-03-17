@@ -99,7 +99,7 @@ echo translation_percent_bar('fr-FR', 99.32);
 echo translation_percent_bar('nl-NL', 99.32);
 echo translation_percent_bar('bg-BG', 97.07);
 echo translation_percent_bar('it-IT', 87.44);
-echo translation_percent_bar('ru-RU', 81.25);
+echo translation_percent_bar('ru-RU', 100);
 echo translation_percent_bar('es-MX', 76.35);
 echo translation_percent_bar('es-ES', 66.95);
 echo translation_percent_bar('zh-TW', 51.46);
@@ -110,7 +110,7 @@ echo translation_percent_bar('de-DE', 51.24);
 echo translation_percent_bar('ja-JP', 30.35);
 echo translation_percent_bar('lt-LT', 23.20);
 echo translation_percent_bar('pt-PT', 15.54);
-echo translation_percent_bar('sl-SL', 4.50);
+echo translation_percent_bar('sl-SL', 52);
 echo translation_percent_bar('ca-ES', 4.11);
 echo translation_percent_bar('cy-GB', 1.30);
 
