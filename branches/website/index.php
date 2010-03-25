@@ -1,5 +1,7 @@
 <?php
 define('MAGPIE_CACHE_AGE', 15*60); // 15 minutes
+define('MAGPIE_OUTPUT_ENCODING', 'UTF-8');
+
 $newsfeedurl = 'http://sitracker.wordpress.com/category/news/feed/';
 // NUmber of news items to show
 $newsitems = 4;
@@ -9,6 +11,14 @@ $relfeedurl = 'http://sourceforge.net/export/rss2_projnews.php?group_id=160319';
 $microblogurl = 'http://identi.ca/group/sit';
 $microblogfeedurl = 'http://identi.ca/group/sit/rss';
 
+// Work-around for what appears to be bad encoding on the wordpress feed
+function fix_encoding($string)
+{
+    $string = mb_convert_encoding($string, 'HTML-ENTITIES', 'UTF-8');
+    return $string;
+}
+
+
 include 'top.inc.php';
 include_once 'magpie/rss_fetch.inc';
 ?>
@@ -17,6 +27,9 @@ include_once 'magpie/rss_fetch.inc';
 <img class='pretty' src='http://sitracker.org/screenshots.jpg' width='300' height='196' alt='SiT Screenshot' />
 
 <?php
+
+
+
 echo "<h2><span style='float:right;margin-top:6px;'><a href='{$newsfeedurl}' title='News feed (RSS)'>";
 echo "<img src='feed-icon-12x12.png' width='12' height='12' alt='' /></a></span>News</h2>";
 $newsrss = @fetch_rss($newsfeedurl);
@@ -27,7 +40,7 @@ if (is_object($newsrss))
     foreach ($newsrss->items AS $item)
     {
         $item['description'] = str_replace('[...]', "[...] <a href='{$item['link']}' class='more'>Read more&hellip;</a>", $item['description']);
-        $html .= "\n<h3 class='headline'>{$item['title']}</h3>\n";
+        $html .= "\n<h3 class='headline'>".fix_encoding($item['title'])."</h3>\n";
         $html .= "<p class='underheadline'>Published {$item['pubdate']} by {$item['dc']['creator']}.  (<a href='{$item['link']}' rel='bookmark'>Permalink</a>)</p>";
         $html .= "<p class='newsstory'>{$item['description']}</p>\n";
         $itemcount++;
