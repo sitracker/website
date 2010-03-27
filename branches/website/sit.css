@@ -215,3 +215,8 @@ p#hostedby
 {
     width: 40px; display: inline-block;
 }
+
+#ohlohbutton a
+{
+    float: right;
+}
