@@ -11,6 +11,7 @@ if (!empty($relfeedurl)) $relrss = fetch_rss($relfeedurl);
 if (is_object($relrss))
 {
     $version = str_replace('Support Incident Tracker (SiT!) ','',$relrss->items[0]['title']);
+    $version = str_replace('Support Incident Tracker','',$relrss->items[0]['title']);
     $version = str_replace(' - Released','',$version);
     $reldate = date('d F Y',strtotime($relrss->items[0]['pubdate']));
 
