@@ -11,16 +11,27 @@
 
 // Authors: Kieran Hogg <kieran[at]sitracker.org>
 //          Ivan Lucas <ivan_lucas[at]users.sourceforge.net>
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<style type='text/css'>
+body { background-color:#FFFFFF; color:#000000; font-family:Tahoma,Helvetica,Arial,'sans serif'; font-size:8pt; margin:0 0 15px; }
+h2 { font-size:14pt; }
+tr.shade1, .shade1 { background-color: #CCCCFF; }
+tr.shade2, .shade2 { background-color: #DDDDFF; }
+tr.shade1:hover, tr.shade2:hover { background-color: #F2F2F2; }
 
-echo "<style type='text/css'>";
-echo "tr.shade1 { background-color: #CCCCFF; }";
-echo "tr.shade2 { background-color: #DDDDFF; }";
-echo "tr.shade1:hover, tr.shade2:hover { background-color: #F2F2F2; }";
-echo "</style>\n";
+</style>
+
+<?php
+
 $permission = 0; // not required
 //require ('core.php');
 
-ini_set('default_charset', $i18ncharset);
+//ini_set('default_charset', $i18ncharset);
 require ("lib/functions.inc.php");
 
 
@@ -154,9 +165,9 @@ elseif ($_REQUEST['mode'] == "show")
         $meta[] = "SiT! Language File - {$languages[$tolang]} ($tolang) by {$_SESSION['realname']} <{$_SESSION['email']}>";
     }
 
-    echo "<h2>{$strWordList}</h2>";
-    echo "<p align='center'>{$strTranslateTheString}<br/>";
-    echo "<strong>{$strCharsToKeepWhenTranslating}</strong></p>";
+    echo "<h2 align='center'>Word List</h2>";
+    echo "<p align='center'>Translate the english string on the left to your requested language on the right<br/>";
+    echo "<strong>When translating, please do not translate anything that looks like the following: [b] {word} %s. These are placeholders, leave them in the appropriate place in your translated string</strong></p>";
     echo "<form method='post' action='{$_SERVER[PHP_SELF]}?mode=save'>";
     echo "<table align='center' style='table-layout:fixed'>";
     echo "<col width='33%'/><col width='33%'/><col width='33%'/>";
@@ -171,17 +182,17 @@ elseif ($_REQUEST['mode'] == "show")
     echo "</td></tr>";
     echo "<tr class='shade2'><td><code>i18nAlphabet</code></td>";
     echo "<td colspan='2'><input type='text' name='i18nalphabet' value=\"{$i18nalphabet}\" size='80' style='width: 100%;' /></td></tr>";
-    echo "<tr><th>{$strVariable}</th><th>{$from}</th><th>{$tolang}</th></tr>";
+    echo "<tr><th>Variable</th><th>{$from}</th><th>{$tolang}</th></tr>";
 
     $shade = 'shade1';
     foreach (array_keys($fromvalues) as $key)
     {
         if ($_REQUEST['lang'] == 'zz') $foreignvalues[$key] = $key;
         echo "<tr class='$shade'><td><label for=\"{$key}\"><code>{$key}</code></label></td>";
-        echo "<td><input name='english_{$key}' value=\"".htmlentities($fromvalues[$key], ENT_QUOTES, 'UTF-8')."\" size=\"45\" readonly='readonly' /></td>";
+        echo "<td><input name='english_{$key}' value=\"".htmlentities($fromvalues[$key], ENT_QUOTES, 'UTF-8')."\" size=\"50\" readonly='readonly' /></td>";
         echo "<td><input id=\"{$key}\" ";
         if (empty($foreignvalues[$key])) echo "class='notice' onblur=\"if ($('{$key}').value != '') { $('{$key}').removeClassName('notice'); $('{$key}').addClassName('idle');} \"";
-        echo "name=\"{$key}\" value=\"".htmlentities($foreignvalues[$key], ENT_QUOTES, 'UTF-8')."\" size=\"45\" />";
+        echo "name=\"{$key}\" value=\"".htmlentities($foreignvalues[$key], ENT_QUOTES, 'UTF-8')."\" size=\"50\" />";
         if (empty($foreignvalues[$key])) echo "<span style='color:red;'>*</span>";
         echo "</td></tr>\n";
         if ($shade=='shade1') $shade='shade2';
@@ -214,7 +225,7 @@ elseif ($_REQUEST['mode'] == "save")
     $i18nalphabet = cleanvar($_REQUEST['i18nalphabet'], TRUE, FALSE);
 
     $filename = "{$lang}.inc.php";
-    echo "<p>".sprintf($strSendTranslation, "<code>{$filename}</code>", "<code>i18n</code>", "<a href='mailto:sitracker-devel-discuss@lists.sourceforge.net'>sitracker-devel-discuss@lists.sourceforge.net</a>")." </p>";
+    echo "<p>Send Translation, <code>{$filename}</code>", "<code>i18n</code>", "<a href='mailto:sitracker-devel-discuss@lists.sourceforge.net'>sitracker-devel-discuss@lists.sourceforge.net</a> </p>";
     $i18nfile = '';
     $i18nfile .= "<?php\n";
     foreach ($_REQUEST['meta'] AS $meta)
