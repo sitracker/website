@@ -84,25 +84,27 @@ echo "<h2>Translation Status</h2>";
 
 echo translation_percent_bar('en-GB', 100);
 echo translation_percent_bar('en-US', 100);
+echo translation_percent_bar('cy-GB', 100);
 echo translation_percent_bar('da-DK', 100);
+echo translation_percent_bar('ru-RU', 99.89);
+echo translation_percent_bar('nb-NO', 99.44);
 echo translation_percent_bar('fr-FR', 99.32);
 echo translation_percent_bar('nl-NL', 99.32);
 echo translation_percent_bar('bg-BG', 97.07);
 echo translation_percent_bar('it-IT', 87.44);
-echo translation_percent_bar('ru-RU', 99.89);
 echo translation_percent_bar('es-MX', 76.35);
 echo translation_percent_bar('es-ES', 66.95);
+echo translation_percent_bar('de-DE', 65.71);
+echo translation_percent_bar('pt-BR', 62.84);
+echo translation_percent_bar('sl-SL', 52);
 echo translation_percent_bar('zh-TW', 51.46);
 echo translation_percent_bar('zh-CN', 51.41);
-echo translation_percent_bar('pt-BR', 62.84);
 echo translation_percent_bar('es-CO', 47.64);
-echo translation_percent_bar('de-DE', 65.71);
 echo translation_percent_bar('ja-JP', 30.35);
 echo translation_percent_bar('lt-LT', 23.20);
 echo translation_percent_bar('pt-PT', 15.54);
-echo translation_percent_bar('sl-SL', 52);
 echo translation_percent_bar('ca-ES', 4.11);
-echo translation_percent_bar('cy-GB', 100);
+
 
 echo "<p><a href=\"http://sitracker.org/wiki/Translation\">Please help us to translate SiT!</a></p>";
 //echo "</div>";
