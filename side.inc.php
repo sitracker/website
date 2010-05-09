@@ -1,10 +1,10 @@
 <div id='side'>
- <img src='http://sitracker.org/newlogo.png' alt='SiT logo' />
+ <img src='http://static.sitracker.org/newlogo.png' alt='SiT logo' />
 <?php
 include_once 'magpie/rss_fetch.inc';
 
 echo "<h2><span style='float:right;margin-top:6px;'><a href='{$relfeedurl}' title='Releases feed (RSS)'>";
-echo "<img src='feed-icon-12x12.png' width='12' height='12' alt='' /></a></span>Releases</h2>";
+echo "<img src='http://static.sitracker.org/feed-icon-12x12.png' width='12' height='12' alt='' /></a></span>Releases</h2>";
 
 
 if (!empty($relfeedurl)) $relrss = fetch_rss($relfeedurl);
@@ -24,7 +24,7 @@ if (is_object($relrss))
 // <h3>Current release: v3.41 (17 December 2008)</h3>
 ?>
 <a href='/wiki/Download'>
- <img class='left' src='http://sitracker.org/download.png'  style='padding-top:5px;' alt='' /><br />
+ <img class='left' src='http://static.sitracker.org/download.png'  style='padding-top:5px;' alt='' /><br />
  <strong>Download</strong><br />Grab your copy now!</a>
 
 <!-- Ohloh, I use it button -->
@@ -48,8 +48,8 @@ if (is_object($relrss))
 if (!empty($microblogfeedurl))
 {
     echo "<h2><span style='float:right;margin-top:6px;'><a href='{$microblogfeedurl}' title='Identi.ca (RSS)'>";
-    echo "<img src='feed-icon-12x12.png' width='12' height='12' alt='' /></a></span>";
-    echo "<a href='http://identi.ca/'><img src='identicaicon.png' width='16' height='16' alt='' /></a> ";
+    echo "<img src='http://static.sitracker.org/feed-icon-12x12.png' width='12' height='12' alt='' /></a></span>";
+    echo "<a href='http://identi.ca/'><img src='http://static.sitracker.org/identicaicon.png' width='16' height='16' alt='' /></a> ";
     echo "<a href='{$microblogurl}' title='Identi.ca Microblogging'>Identi.ca</a></h2>";
 
     $mbrss = fetch_rss($microblogfeedurl);
@@ -113,13 +113,13 @@ echo "<div style='padding-bottom: .5em;'>";
 echo "<h2>Share this</h2>";
 ?>
 <div id='sociallinks' style=''>
-<a href="http://delicious.com/save" onclick="window.open('http://delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550'); return false;"><img src='delicious.png' alt='' title='Bookmark with del.icio.us'/></a>
-<a href="http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http%3A%2F%2Fsitracker.org&amp;title=Support%20Incident%20Tracker"><img src='googlebookmark.png' alt='' title='Google Bookmarks' /></a>
-<a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fsitracker.org"><img src='facebook.png' alt='' title='Bookmark via Facebook' /></a>
-<a href="http://www.netvibes.com/share?title=Support%20Incident%20Tracker&amp;url=http%3A%2F%2Fsitracker.org"><img src='netvibes.png' alt='' title='Bookmark via Netvibes' /></a>
-<a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fsitracker.org&amp;title=Support%20Incident%20Tracker"><img src='stumbleupon.png' alt='' title='Share via StumbleUpon' /></a>
-<a href='http://identi.ca/notice/new?status_textarea=http%3A%2F%2Fsitracker.org%20!sit'><img src='identica.png' alt='' title='Share via Identi.ca' /></a>
-<a href="http://twitter.com/home?status=Support%20Incident%20Tracker%20http%3A%2F%2Fsitracker.org"><img src='twitter.png' alt='' title='Share via Twitter' /></a>
+<a href="http://delicious.com/save" onclick="window.open('http://delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550'); return false;"><img src='http://static.sitracker.org/delicious.png' alt='' title='Bookmark with del.icio.us'/></a>
+<a href="http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http%3A%2F%2Fsitracker.org&amp;title=Support%20Incident%20Tracker"><img src='http://static.sitracker.org/googlebookmark.png' alt='' title='Google Bookmarks' /></a>
+<a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fsitracker.org"><img src='http://static.sitracker.org/facebook.png' alt='' title='Bookmark via Facebook' /></a>
+<a href="http://www.netvibes.com/share?title=Support%20Incident%20Tracker&amp;url=http%3A%2F%2Fsitracker.org"><img src='http://static.sitracker.org/netvibes.png' alt='' title='Bookmark via Netvibes' /></a>
+<a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fsitracker.org&amp;title=Support%20Incident%20Tracker"><img src='http://static.sitracker.org/stumbleupon.png' alt='' title='Share via StumbleUpon' /></a>
+<a href='http://identi.ca/notice/new?status_textarea=http%3A%2F%2Fsitracker.org%20!sit'><img src='http://static.sitracker.org/identica.png' alt='' title='Share via Identi.ca' /></a>
+<a href="http://twitter.com/home?status=Support%20Incident%20Tracker%20http%3A%2F%2Fsitracker.org"><img src='http://static.sitracker.org/twitter.png' alt='' title='Share via Twitter' /></a>
 </div>
 </div>
 
