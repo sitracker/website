@@ -1,7 +1,7 @@
 </div>
 </div>
 <div id='statusbar'><strong>&copy; 2008-<?php echo date('Y'); ?> The Support Incident Tracker Project</strong></div>
-<p align='center'> <a href="http://www.tsohost.co.uk/"><img src="tsohost-button.png" alt="Tsohost Logo" title="Hosted by Tsohost.co.uk clustered grid
+<p align='center'> <a href="http://www.tsohost.co.uk/"><img src="http://static.sitracker.org/tsohost-button.png" alt="Tsohost Logo" title="Hosted by Tsohost.co.uk clustered grid
 hosting" border="0" height="32" width="100" /></a></p>
 <p id='hostedby'>Hosted by <a href='http://www.tsohost.co.uk'>Tsohost.co.uk</a> clustered grid hosting</a></p>
 <!-- Piwik -->
