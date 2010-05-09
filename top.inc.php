@@ -7,12 +7,12 @@ include 'lib.inc.php';
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 <title>SiT! Support Incident Tracker</title>
-<link rel='SHORTCUT ICON' href='/sit_favicon.png' />
+<link rel='SHORTCUT ICON' href='http://static.sitracker.org/sit_favicon.png' />
 <link rel="alternate" type="application/rss+xml" title="SiT! News RSS 2.0" href="http://sitracker.wordpress.com/category/news/feed/" />
 <link rel="alternate" type="application/rss+xml" title="SiT! Feeds Agregated" href="http://feeds.feedburner.com/sitfeeds" />
 
-<script src='/prototype.js' type='text/javascript'></script>
-<style type='text/css'>@import url('http://sitracker.org/sit.css');</style>
+<script src='http://static.sitracker.org/prototype.js' type='text/javascript'></script>
+<style type='text/css'>@import url('http://static.sitracker.org/sit.css');</style>
 <script type="text/javascript">
 /* <![CDATA[ */
 var isIE = /*@cc_on!@*/false;
