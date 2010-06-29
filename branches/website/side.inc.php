@@ -96,6 +96,7 @@ echo translation_percent_bar('it-IT', 87.44);
 echo translation_percent_bar('pt-BR', 71.41);
 echo translation_percent_bar('es-ES', 66.95);
 echo translation_percent_bar('de-DE', 65.71);
+echo translation_percent_bar('ro-RO', 52.02);
 echo translation_percent_bar('sl-SL', 52);
 echo translation_percent_bar('zh-TW', 51.46);
 echo translation_percent_bar('zh-CN', 51.41);
