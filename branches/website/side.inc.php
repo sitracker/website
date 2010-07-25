@@ -105,6 +105,7 @@ echo translation_percent_bar('ca-ES', 38.89);
 echo translation_percent_bar('ja-JP', 30.35);
 echo translation_percent_bar('lt-LT', 23.20);
 echo translation_percent_bar('pt-PT', 15.54);
+echo translation_percent_bar('gr-GR', 15.09);
 
 
 
