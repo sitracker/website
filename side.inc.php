@@ -90,23 +90,23 @@ echo translation_percent_bar('es-MX', 100);
 echo translation_percent_bar('es-ES', 99.94);
 echo translation_percent_bar('ru-RU', 99.89);
 echo translation_percent_bar('nb-NO', 99.44);
-echo translation_percent_bar('fr-FR', 99.32);
-echo translation_percent_bar('nl-NL', 99.32);
-echo translation_percent_bar('bg-BG', 97.07);
-echo translation_percent_bar('it-IT', 87.44);
-echo translation_percent_bar('pt-BR', 71.41);
+echo translation_percent_bar('fr-FR', 99.29);
+echo translation_percent_bar('nl-NL', 99.27);
+echo translation_percent_bar('bg-BG', 97.02);
+echo translation_percent_bar('ro-RO', 76.35);
+echo translation_percent_bar('pt-BR', 71.40);
+echo translation_percent_bar('it-IT', 87.39);
 echo translation_percent_bar('de-DE', 65.71);
 echo translation_percent_bar('gr-GR', 52.53);
-echo translation_percent_bar('ro-RO', 52.02);
-echo translation_percent_bar('sl-SL', 52);
+echo translation_percent_bar('sl-SL', 52.03);
 echo translation_percent_bar('zh-TW', 51.46);
 echo translation_percent_bar('zh-CN', 51.41);
 echo translation_percent_bar('es-CO', 47.64);
-echo translation_percent_bar('ca-ES', 38.89);
+echo translation_percent_bar('ca-ES', 38.91);
 echo translation_percent_bar('ja-JP', 30.35);
 echo translation_percent_bar('lt-LT', 23.20);
 echo translation_percent_bar('pt-PT', 15.54);
-
+echo translation_percent_bar('sv-SE', 7.38);
 
 
 
