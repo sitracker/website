@@ -5,3 +5,6 @@ Disallow: /cache/
 User-agent: Java/1.4.1_04
 Disallow: /
 
+User-agent: *
+Disallow: /irc/logs
+
