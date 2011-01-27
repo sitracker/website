@@ -34,6 +34,7 @@ if (is_object($relrss))
 
 
 <div style='border-top: 1px solid #CCC;  border-bottom: 1px solid #CCC;  margin-top: 1em; padding-top: 1em; padding-bottom: 2em;'>
+<div id='flattr' style='margin-top: 20px; margin-right: 3px; clear:both; float:right;'><a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://sitracker.org"></a></div>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="8254393">
@@ -41,6 +42,8 @@ if (is_object($relrss))
 <img alt="" border="0" src="pixel.gif" width="1" height="1"><span style='color: #333;'>Your donation will help us to build a better application. Thank you.</span>
 </form>
 </div>
+
+
 
 <br />
 
