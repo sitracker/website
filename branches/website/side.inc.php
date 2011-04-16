@@ -97,6 +97,7 @@ echo translation_percent_bar('nb-NO', 99.44);
 echo translation_percent_bar('fr-FR', 99.29);
 echo translation_percent_bar('nl-NL', 99.27);
 echo translation_percent_bar('bg-BG', 97.02);
+echo translation_percent_bar('pl-PL', 90.88);
 echo translation_percent_bar('it-IT', 87.39);
 echo translation_percent_bar('ro-RO', 76.35);
 echo translation_percent_bar('pt-BR', 71.40);
@@ -107,10 +108,10 @@ echo translation_percent_bar('zh-CN', 51.41);
 echo translation_percent_bar('es-CO', 47.64);
 echo translation_percent_bar('ca-ES', 38.91);
 echo translation_percent_bar('ja-JP', 30.35);
+echo translation_percent_bar('ar', 30.12);
 echo translation_percent_bar('lt-LT', 23.20);
 echo translation_percent_bar('pt-PT', 15.54);
 echo translation_percent_bar('sv-SE', 7.38);
-
 
 
 echo "<p><a href=\"http://sitracker.org/wiki/Translation\">Please help us to translate SiT!</a></p>";
