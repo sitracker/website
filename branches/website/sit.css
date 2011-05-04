@@ -37,7 +37,7 @@ h2 {
   border-bottom: 1px #203894 solid;
 }
 h1 {
-  background-image: url('http://sitracker.sourceforge.net/top2.png');
+    background-image: url('http://static.sitracker.org/top2.png');
   font-size: 16pt; font-weight: bold; color: #FFF;
   background-color: #203894; margin: 0px; padding: 3px 0px 3px 0px;
 }
@@ -46,11 +46,11 @@ h1 { text-align: center; }
 div.hr { width: 100%; border-bottom: 1px solid #203894; margin-top: 1em;}
 
 #masthead {
-  background-image: url('http://sitracker.sourceforge.net/top2.png');
+    background-image: url('http://static.sitracker.org/top2.png');
   background-position: top-left; background-repeat: x-repeat;
 }
 #apptitle {
-  background-image: url('http://sitracker.sourceforge.net/sit_swirl2.png');
+    background-image: url('http://static.sitracker.org/sit_swirl2.png');
   background-position: top-left; background-repeat: no-repeat;
   height: 50px; background-color: transparent;}
 #apptitle span {
@@ -150,7 +150,7 @@ margin: 4px;
   background-color: white;
   border:1px solid #CCCCCC;
   padding:3px 3px 3px 20px;
-  background:transparent url('http://sitracker.sourceforge.net/searchbg.png') no-repeat scroll 4px center;
+  background:transparent url('http://static.sitracker.org/searchbg.png') no-repeat scroll 4px center;
   color: #888;
 }
 
