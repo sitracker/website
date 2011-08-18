@@ -3,10 +3,30 @@ redirect 301 /revisions.xml http://sitracker.org/w/index.php?title=Special:Recen
 redirect 301 /viewforum.php http://sitracker.org/forum/
 <IfModule mod_rewrite.c>
 RewriteEngine On
+## Anti-stealing images
+RewriteCond %{HTTP_REFERER} !^http://sitracker\.org/ [NC]
+RewriteCond %{HTTP_REFERER} !^$
+RewriteRule .*\.(jpe?g|gif|bmp|png)$ - [F]
+
 RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
 RewriteRule ^(.*)$ http://%1/$1 [R=301,L] 
 RewriteRule ^wiki/(.*)$ /w/index.php?title=$1 [PT,L,QSA]
 RewriteRule ^wiki/*$ /w/index.php [L,QSA]
 ###RewriteRule ^/*$ /w/index.php [L,QSA]
+
 </IfModule>
 ErrorDocument 404 /404.php
+
+# set the spam_ref variable
+SetEnvIfNoCase Referer "^http://(www.)?aimtrust.com" spam_ref=1
+
+SetEnvIfNoCase Referer "^http://(www.)?theinvestblog.com" spam_ref=1
+
+SetEnvIfNoCase Referer "^casino" spam_ref=1
+
+# block all referres that have spam_ref set
+<FilesMatch "(.*)">
+Order Allow,Deny
+Allow from all
+Deny from env=spam_ref
+</FilesMatch>

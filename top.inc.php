@@ -12,7 +12,7 @@ include 'lib.inc.php';
 <link rel="alternate" type="application/rss+xml" title="SiT! Feeds Agregated" href="http://feeds.feedburner.com/sitfeeds" />
 
 <script src='http://static.sitracker.org/prototype.js' type='text/javascript'></script>
-<style type='text/css'>@import url('http://static.sitracker.org/sit.css');</style>
+<style type='text/css'>@import url('sit.css');</style>
 <script type="text/javascript">
 /* <![CDATA[ */
 var isIE = /*@cc_on!@*/false;
