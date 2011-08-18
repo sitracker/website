@@ -1839,6 +1839,8 @@ $strUnsupported = 'Unsupported';
 $strUntilSpecificDateAndTime = 'Until specific date and time';
 $strUntilX = 'Until %s';
 $strUntitled = 'Untitled';
+# Requiring immediate action or attention
+$strUrgent = 'Urgent';
 $strUsed = 'Used';
 $strUsedNofN = 'Used %s of %s';
 $strUsedNofNDaysEntitlement = 'Used %s of %s days entitlement';
