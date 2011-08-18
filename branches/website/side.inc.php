@@ -100,6 +100,7 @@ echo translation_percent_bar('fr-FR', 99.29);
 echo translation_percent_bar('nl-NL', 99.27);
 echo translation_percent_bar('bg-BG', 97.02);
 echo translation_percent_bar('pl-PL', 90.88);
+echo translation_percent_bar('fa-ir', 90.06);
 echo translation_percent_bar('it-IT', 87.39);
 echo translation_percent_bar('ro-RO', 76.35);
 echo translation_percent_bar('pt-BR', 71.40);
