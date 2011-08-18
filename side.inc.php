@@ -112,6 +112,7 @@ echo translation_percent_bar('ca-ES', 38.91);
 echo translation_percent_bar('ja-JP', 30.35);
 echo translation_percent_bar('ar', 30.12);
 echo translation_percent_bar('lt-LT', 23.20);
+echo translation_percent_bar('af', 15.19);
 echo translation_percent_bar('sv-SE', 7.38);
 
 
