@@ -104,7 +104,7 @@ echo translation_percent_bar('فارسی, fa-ir', 90.06);
 echo translation_percent_bar('Italiano , it-IT', 87.39);
 echo translation_percent_bar('Română, ro-RO', 76.35);
 echo translation_percent_bar('Português brasileiro, pt-BR', 71.40);
-echo translation_percent_bar('Ελληνικά, gr-GR', 52.98);
+echo translation_percent_bar('Ελληνικά, el-GR', 52.98);
 echo translation_percent_bar('Slovenščina, sl-SL', 52.03);
 echo translation_percent_bar('繁體中文, zh-TW', 51.46);
 echo translation_percent_bar('简体中文, zh-CN', 51.41);
