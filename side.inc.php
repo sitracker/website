@@ -113,7 +113,7 @@ echo translation_percent_bar('Català, ca-ES', 38.91);
 echo translation_percent_bar('日本語, ja-JP', 30.35);
 echo translation_percent_bar('العربية, ar', 30.12);
 echo translation_percent_bar('Lietuvių, lt-LT', 23.20);
-echo translation_percent_bar('Afrikaans, af', 15.19);
+echo translation_percent_bar('Afrikaans, af', 19);
 echo translation_percent_bar('Svenska, sv-SE', 7.38);
 
 
