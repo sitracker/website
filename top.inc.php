@@ -44,7 +44,7 @@ function clearjumpto()
  <li class='menuitem'><a href='http://sitracker.org/forum/'>Forum</a></li>
  <li class='menuitem'><a href='http://bugs.sitracker.org/'>Bugs</a></li>
  <li class='menuitem'><a href='http://sourceforge.net/projects/sitracker/'>Sourceforge Project</a></li>
- <li class='menuitem'><a href='http://sitracker.org/wiki/Demo'>Demo</a></li>
+ <?php /* <li class='menuitem'><a href='http://sitracker.org/wiki/Demo'>Demo</a></li> */?>
  <li class='menuimte'><a href='http://sitracker.org/wiki/Screenshots'>Screenshots</a></li>
  <li class='menuimte'><a href='http://sitracker.spreadshirt.co.uk/'>Merchandise</a></li>
  </ul>
