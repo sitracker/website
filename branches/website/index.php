@@ -14,7 +14,7 @@ $microblogfeedurl = 'http://identi.ca/group/sit/rss';
 // Work-around for what appears to be bad encoding on the wordpress feed
 function fix_encoding($string)
 {
-    $string = mb_convert_encoding($string, 'HTML-ENTITIES', 'UTF-8');
+    $string = trim(mb_convert_encoding($string, 'HTML-ENTITIES', 'UTF-8'));
     return $string;
 }
 
@@ -42,7 +42,7 @@ if (is_object($newsrss))
         $item['description'] = str_replace('[...]', "[...] <a href='{$item['link']}' class='more'>Read more&hellip;</a>", $item['description']);
         $html .= "\n<h3 class='headline'>".fix_encoding($item['title'])."</h3>\n";
         $html .= "<p class='underheadline'>Published {$item['pubdate']} by {$item['dc']['creator']}.  (<a href='{$item['link']}' rel='bookmark'>Permalink</a>)</p>";
-        $html .= "<p class='newsstory'>{$item['description']}</p>\n";
+        $html .= "<p class='newsstory'>".fix_encoding($item['description'])."</p>\n";
         $itemcount++;
         if ($itemcount > $newsitems) break;
     }
