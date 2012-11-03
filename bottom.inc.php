@@ -1,8 +1,8 @@
 </div>
 </div>
 <div id='statusbar'><strong>&copy; 2008-<?php echo date('Y'); ?> The Support Incident Tracker Project</strong></div>
-<p align='center'><a href="http://billing.tsohost.co.uk/aff.php?aff=921" title="http://www.tsohost.co.uk/"><img src="http://static.sitracker.org/tsohost-button.png" alt="Tsohost Logo" title="Hosted by Tsohost.co.uk clustered grid hosting" border="0" height="32" width="100" /></a></p>
-<p id='hostedby'>Hosted by <a href="http://billing.tsohost.co.uk/aff.php?aff=921" title="http://www.tsohost.co.uk">Tsohost.co.uk clustered grid hosting</a></p>
+<p align='center'><a href="http://my.tsohost.com/aff.php?aff=921" title="http://www.tsohost.co.uk/"><img src="http://static.sitracker.org/tsohost-logo.png" alt="Tsohost Logo" title="Hosted by Tsohost.co.uk clustered grid hosting" border="0" height="80" width="150" /></a></p>
+<p id='hostedby'>Hosted by <a href="http://my.tsohost.com/aff.php?aff=921" title="http://www.tsohost.co.uk">Tsohost clustered grid hosting</a></p>
 <!-- Piwik -->
 <a href="http://piwik.org" title="Open source web analytics" onclick="window.open(this.href);return(false);">
 <script type="text/javascript">
