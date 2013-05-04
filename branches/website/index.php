@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors','0');
 define('MAGPIE_CACHE_AGE', 15*60); // 15 minutes
 define('MAGPIE_OUTPUT_ENCODING', 'UTF-8');
 
