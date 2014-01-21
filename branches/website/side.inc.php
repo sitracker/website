@@ -34,7 +34,7 @@ if (is_object($relrss))
 
 
 <div style='border-top: 1px solid #CCC;  border-bottom: 1px solid #CCC;  margin-top: 1em; padding-top: 1em; padding-bottom: 2em;'>
-<div id='flattr' style='margin-top: 20px; margin-right: 3px; clear:both; float:right;'><a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://sitracker.org"></a></div>
+<div id='flattr' style='margin-top: 20px; margin-right: 3px; clear:both; float:right;'><a href="https://flattr.com/submit/auto?user_id=ericthefish&url=http%3A%2F%2Fsitracker.org%2F" target="_blank"><img src="//api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0"></a></div>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick"/>
 <input type="hidden" name="hosted_button_id" value="8254393"/>
