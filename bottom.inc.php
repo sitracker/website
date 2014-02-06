@@ -17,5 +17,14 @@ piwik_log(piwik_action_name, piwik_idsite, piwik_url);
 <object><noscript><p>Open source web analytics <img src="http://sitracker.org/piwik/piwik.php?idsite=1" style="border:0" alt=""/></p></noscript></object></a>
 <!-- End Piwik Tag -->
 <!--- 20100317-INL-11:18 -->
+<!--[if !(lte IE 8)]><!-->
+<script type="text/javascript">
+  (function(){
+    var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
+    e.src = document.location.protocol + '//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
+  })();
+</script>
+<!--<![endif]-->
 </body>
 </html>
